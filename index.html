@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EET Departmental Cricket Championship 2026</title>
+    <title>EET Departmental Chess Championship 2026</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -42,11 +42,6 @@
         .neon-glow {
             text-shadow: 0 0 20px rgba(234, 179, 8, 0.5), 0 0 40px rgba(234, 179, 8, 0.3);
         }
-        .poster-card {
-            background: linear-gradient(135deg, #111318 0%, #0d0e12 100%);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 30px rgba(234, 179, 8, 0.15);
-        }
-        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -64,48 +59,42 @@
 </head>
 <body class="bg-[#090a0f] text-gray-100 min-h-screen flex flex-col justify-between selection:bg-yellow-500 selection:text-black">
 
-    <header class="fixed top-0 left-0 right-0 z-50 bg-[#090a0f]/80 backdrop-blur-md border-b border-white/10">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#090a0f]/85 backdrop-blur-md border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-700 flex items-center justify-center text-black font-black shadow-lg shadow-yellow-500/30">
                     <i data-lucide="crown" class="w-6 h-6 stroke-[2.5]"></i>
                 </div>
                 <span class="cinzel-font text-xl md:text-2xl font-bold tracking-wider bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                    EET Departmental Championship 2026
+                    EET Chess Championship 2026
                 </span>
             </div>
             
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
                 <a href="#hero" class="hover:text-yellow-400 transition-colors">Home</a>
-                <a href="#details" class="hover:text-yellow-400 transition-colors">Tournament Info</a>
-                <a href="#schedule" class="hover:text-yellow-400 transition-colors">Schedule</a>
+                <a href="#details" class="hover:text-yellow-400 transition-colors">Tournament Rules</a>
+                <a href="#schedule" class="hover:text-yellow-400 transition-colors">Schedule & Matchups</a>
             </nav>
-
-            <div class="flex items-center space-x-4">
-            </div>
         </div>
     </header>
 
     <main class="flex-grow pt-20">
         <section id="hero" class="relative min-h-[90vh] flex items-center justify-center px-4 py-20 overflow-hidden">
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(234,179,8,0.08)_0%,transparent_70%)] pointer-events-none"></div>
-            <div class="absolute -top-40 -left-40 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
-
             <div class="max-w-5xl mx-auto text-center relative z-10 space-y-8">
                 <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs md:text-sm font-semibold uppercase tracking-widest backdrop-blur-sm">
-                    <i data-lucide="sparkles" class="w-4 h-4"></i>
-                    <span>Official Championship Series</span>
+                    <i data-lucide="monitor" class="w-4 h-4"></i>
+                    <span>Official App-Based Chess Championship</span>
                 </div>
 
                 <h1 class="cinzel-font text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-tight">
                     <span class="bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-600 bg-clip-text text-transparent neon-glow">
-                        SHOWDOWN
+                        DIGITAL SHOWDOWN
                     </span>
                 </h1>
 
                 <p class="max-w-2xl mx-auto text-gray-400 text-base md:text-lg font-light leading-relaxed">
-                    Step onto the ultimate battleground of strategy, intellect, and speed.
+                    Played entirely on application platforms with strictly disabled hints, move suggestions, and legal highlights across an optimized tournament timeline.
                 </p>
 
                 <!-- Live Countdown Timer -->
@@ -137,58 +126,47 @@
             </div>
         </section>
 
+        <!-- RULES SECTION -->
         <section id="details" class="py-24 px-4 max-w-7xl mx-auto">
             <div class="text-center space-y-4 mb-16">
                 <div class="inline-flex items-center space-x-2 text-yellow-400 text-xs font-semibold uppercase tracking-widest">
-                    <i data-lucide="info" class="w-4 h-4"></i>
-                    <span>Tournament Specifications</span>
+                    <i data-lucide="shield-alert" class="w-4 h-4"></i>
+                    <span>Digital App Settings & Guidelines</span>
                 </div>
                 <h2 class="cinzel-font text-3xl sm:text-5xl font-black text-white">
-                    RULES & <span class="text-yellow-400">FORMAT</span>
+                    STRICT <span class="text-yellow-400">DIGITAL RULES</span>
                 </h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/10 backdrop-blur-md space-y-6 hover:border-yellow-500/50 transition-all">
                     <div class="w-14 h-14 rounded-2xl bg-yellow-500/10 flex items-center justify-center text-yellow-400">
-                        <i data-lucide="zap" class="w-7 h-7"></i>
+                        <i data-lucide="eye-off" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="cinzel-font text-xl font-bold text-white">Match Time Control</h3>
+                    <h3 class="cinzel-font text-xl font-bold text-white">No Hints & Move Shows</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Total match time is 20 minutes (10 minutes per player) managed strictly using a digital stopwatch.
+                        In-app movement highlights, legal square suggestions, analysis hints, and takebacks are completely disabled.
                     </p>
-                    <ul class="space-y-2 text-xs text-gray-300">
-                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-yellow-400"></i><span>10 Minutes per Player</span></li>
-                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-yellow-400"></i><span>Digital Stopwatch Timer</span></li>
-                    </ul>
                 </div>
 
                 <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/10 backdrop-blur-md space-y-6 hover:border-yellow-500/50 transition-all">
                     <div class="w-14 h-14 rounded-2xl bg-yellow-500/10 flex items-center justify-center text-yellow-400">
-                        <i data-lucide="alert-triangle" class="w-7 h-7"></i>
+                        <i data-lucide="timer" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="cinzel-font text-xl font-bold text-white">Illegal Turn Rule</h3>
+                    <h3 class="cinzel-font text-xl font-bold text-white">Equal App Timer Control</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Making an illegal turn or a wrong move that can never be turned results in an immediate elimination ("godi will out").
+                        Every game is configured with an identical fixed time clock per player, managed strictly by the chess platform software.
                     </p>
-                    <ul class="space-y-2 text-xs text-gray-300">
-                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-yellow-400"></i><span>Zero Tolerance for Irreversible Errors</span></li>
-                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-yellow-400"></i><span>Immediate Out / Elimination</span></li>
-                    </ul>
                 </div>
 
                 <div class="p-8 rounded-3xl bg-white/[0.02] border border-white/10 backdrop-blur-md space-y-6 hover:border-yellow-500/50 transition-all">
                     <div class="w-14 h-14 rounded-2xl bg-yellow-500/10 flex items-center justify-center text-yellow-400">
-                        <i data-lucide="clock" class="w-7 h-7"></i>
+                        <i data-lucide="laptop" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="cinzel-font text-xl font-bold text-white">Daily Timing</h3>
+                    <h3 class="cinzel-font text-xl font-bold text-white">Platform Based Gameplay</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        2 matches are held per matchday. First match starts promptly at 12:00 PM and second match at 12:30 PM.
+                        Players are present physically at the venue, but play digitally on Android devices instead of using physical boards.
                     </p>
-                    <ul class="space-y-2 text-xs text-gray-300">
-                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-yellow-400"></i><span>Match 1: 12:00 PM</span></li>
-                        <li class="flex items-center space-x-2"><i data-lucide="check" class="w-4 h-4 text-yellow-400"></i><span>Match 2: 12:30 PM</span></li>
-                    </ul>
                 </div>
             </div>
         </section>
@@ -199,18 +177,17 @@
                 <div class="text-center space-y-4">
                     <div class="inline-flex items-center space-x-2 text-yellow-400 text-xs font-semibold uppercase tracking-widest">
                         <i data-lucide="calendar" class="w-4 h-4"></i>
-                        <span>Event Timeline & Fixtures</span>
+                        <span>Optimized Fair Schedule (Every player plays exactly 3 group matches + Semi 1, Semi 2, and Final)</span>
                     </div>
                     <h2 class="cinzel-font text-3xl sm:text-5xl font-black text-white">
                         TOURNAMENT <span class="text-yellow-400">SCHEDULE</span>
                     </h2>
                 </div>
 
-                <!-- Group Stage -->
                 <div class="space-y-6">
                     <h3 class="cinzel-font text-2xl font-bold text-yellow-400 border-b border-white/10 pb-3 flex items-center justify-between">
-                        <span>Group Stage</span>
-                        <span class="text-xs text-gray-400 font-sans font-normal">2 Matches / Day (12:00 PM & 12:30 PM)</span>
+                        <span>Balanced 8-Day Fixture List (Availability-Aware & Equal Matches)</span>
+                        <span class="text-xs text-gray-400 font-sans font-normal">Dates: Oct 15, Oct 22, Oct 29, Nov 12, Nov 19, Nov 26, Dec 10, Dec 17</span>
                     </h3>
 
                     <div class="grid grid-cols-1 gap-4">
@@ -218,16 +195,20 @@
                         <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-yellow-500/30 transition-all space-y-3">
                             <div class="flex items-center justify-between text-xs text-gray-400 border-b border-white/5 pb-2">
                                 <span class="font-bold text-yellow-400 uppercase tracking-wider">Day 1 — 15 October 2026</span>
-                                <span>Group A</span>
+                                <span class="text-gray-400 font-medium">3 Group Matches (Hanzala, Sir Umer, Sir Waqar busy)</span>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:00 PM (Match 1)</span>
-                                    <span class="text-white font-medium">Ghulam Mohiuddin <span class="text-yellow-400 px-1">vs</span> Sir Arslan Dawood</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M1)</span>
+                                    <span class="text-white font-medium">Sir Arslan Dawood <span class="text-yellow-400 px-1">vs</span> Sir Faraz Anwer</span>
                                 </div>
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:30 PM (Match 2)</span>
-                                    <span class="text-white font-medium">Numan Jawed <span class="text-yellow-400 px-1">vs</span> Sir Umer Ijaz</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M2)</span>
+                                    <span class="text-white font-medium">Numan Jawed <span class="text-yellow-400 px-1">vs</span> Muhammad Saim</span>
+                                </div>
+                                <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
+                                    <span class="text-xs text-yellow-500 font-bold">12:30-1:00 (M3)</span>
+                                    <span class="text-white font-medium">Muhammad Abdullah <span class="text-yellow-400 px-1">vs</span> Muhammad Rehan</span>
                                 </div>
                             </div>
                         </div>
@@ -236,16 +217,20 @@
                         <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-yellow-500/30 transition-all space-y-3">
                             <div class="flex items-center justify-between text-xs text-gray-400 border-b border-white/5 pb-2">
                                 <span class="font-bold text-yellow-400 uppercase tracking-wider">Day 2 — 22 October 2026</span>
-                                <span>Group B</span>
+                                <span class="text-gray-400 font-medium">3 Group Matches (Sir Umer & Sir Waqar busy)</span>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:00 PM (Match 3)</span>
-                                    <span class="text-white font-medium">Muhammad Saim <span class="text-yellow-400 px-1">vs</span> Sir Faraz Anwer</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M4)</span>
+                                    <span class="text-white font-medium">Muhammad Hanzala <span class="text-yellow-400 px-1">vs</span> Ghulam Mohiuddin</span>
                                 </div>
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:30 PM (Match 4)</span>
-                                    <span class="text-white font-medium">Muhammad Abdullah <span class="text-yellow-400 px-1">vs</span> Sir Waqar Aziz</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M5)</span>
+                                    <span class="text-white font-medium">Sir Arslan Dawood <span class="text-yellow-400 px-1">vs</span> Muhammad Abdullah</span>
+                                </div>
+                                <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
+                                    <span class="text-xs text-yellow-500 font-bold">12:30-1:00 (M6)</span>
+                                    <span class="text-white font-medium">Sir Faraz Anwer <span class="text-yellow-400 px-1">vs</span> Muhammad Saim</span>
                                 </div>
                             </div>
                         </div>
@@ -254,16 +239,20 @@
                         <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-yellow-500/30 transition-all space-y-3">
                             <div class="flex items-center justify-between text-xs text-gray-400 border-b border-white/5 pb-2">
                                 <span class="font-bold text-yellow-400 uppercase tracking-wider">Day 3 — 29 October 2026</span>
-                                <span>Group A</span>
+                                <span class="text-gray-400 font-medium">3 Group Matches (Muhammad Hanzala busy)</span>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:00 PM (Match 5)</span>
-                                    <span class="text-white font-medium">Ghulam Mohiuddin <span class="text-yellow-400 px-1">vs</span> Numan Jawed</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M7)</span>
+                                    <span class="text-white font-medium">Sir Waqar Aziz <span class="text-yellow-400 px-1">vs</span> Sir Umer Ijaz</span>
                                 </div>
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:30 PM (Match 6)</span>
-                                    <span class="text-white font-medium">Sir Arslan Dawood <span class="text-yellow-400 px-1">vs</span> Sir Umer Ijaz</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M8)</span>
+                                    <span class="text-white font-medium">Numan Jawed <span class="text-yellow-400 px-1">vs</span> Ghulam Mohiuddin</span>
+                                </div>
+                                <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
+                                    <span class="text-xs text-yellow-500 font-bold">12:30-1:00 (M9)</span>
+                                    <span class="text-white font-medium">Sir Umer Ijaz <span class="text-yellow-400 px-1">vs</span> Muhammad Rehan</span>
                                 </div>
                             </div>
                         </div>
@@ -272,16 +261,20 @@
                         <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-yellow-500/30 transition-all space-y-3">
                             <div class="flex items-center justify-between text-xs text-gray-400 border-b border-white/5 pb-2">
                                 <span class="font-bold text-yellow-400 uppercase tracking-wider">Day 4 — 12 November 2026</span>
-                                <span>Group B</span>
+                                <span class="text-gray-400 font-medium">3 Group Matches (All Players Available)</span>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:00 PM (Match 7)</span>
-                                    <span class="text-white font-medium">Muhammad Saim <span class="text-yellow-400 px-1">vs</span> Muhammad Abdullah</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M10)</span>
+                                    <span class="text-white font-medium">Sir Waqar Aziz <span class="text-yellow-400 px-1">vs</span> Sir Arslan Dawood</span>
                                 </div>
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:30 PM (Match 8)</span>
-                                    <span class="text-white font-medium">Sir Faraz Anwer <span class="text-yellow-400 px-1">vs</span> Sir Waqar Aziz</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M11)</span>
+                                    <span class="text-white font-medium">Sir Waqar Aziz <span class="text-yellow-400 px-1">vs</span> Muhammad Hanzala</span>
+                                </div>
+                                <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
+                                    <span class="text-xs text-yellow-500 font-bold">12:30-1:00 (M12)</span>
+                                    <span class="text-white font-medium">Sir Umer Ijaz <span class="text-yellow-400 px-1">vs</span> Muhammad Hanzala</span>
                                 </div>
                             </div>
                         </div>
@@ -290,80 +283,62 @@
                         <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-yellow-500/30 transition-all space-y-3">
                             <div class="flex items-center justify-between text-xs text-gray-400 border-b border-white/5 pb-2">
                                 <span class="font-bold text-yellow-400 uppercase tracking-wider">Day 5 — 19 November 2026</span>
-                                <span>Group A</span>
+                                <span class="text-gray-400 font-medium">3 Group Matches (Hanzala, Sir Umer, Sir Waqar busy)</span>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:00 PM (Match 9)</span>
-                                    <span class="text-white font-medium">Ghulam Mohiuddin <span class="text-yellow-400 px-1">vs</span> Sir Umer Ijaz</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M13)</span>
+                                    <span class="text-white font-medium">Sir Faraz Anwer <span class="text-yellow-400 px-1">vs</span> Numan Jawed</span>
                                 </div>
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:30 PM (Match 10)</span>
-                                    <span class="text-white font-medium">Numan Jawed <span class="text-yellow-400 px-1">vs</span> Sir Arslan Dawood</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M14)</span>
+                                    <span class="text-white font-medium">Muhammad Saim <span class="text-yellow-400 px-1">vs</span> Muhammad Abdullah</span>
+                                </div>
+                                <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
+                                    <span class="text-xs text-yellow-500 font-bold">12:30-1:00 (M15)</span>
+                                    <span class="text-white font-medium">Muhammad Rehan <span class="text-yellow-400 px-1">vs</span> Ghulam Mohiuddin</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Day 6 -->
+                        <!-- Day 6 (Semi 1) -->
                         <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-yellow-500/30 transition-all space-y-3">
                             <div class="flex items-center justify-between text-xs text-gray-400 border-b border-white/5 pb-2">
                                 <span class="font-bold text-yellow-400 uppercase tracking-wider">Day 6 — 26 November 2026</span>
-                                <span>Group B</span>
+                                <span class="text-gray-400 font-medium">Semi 1</span>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div class="grid grid-cols-1 gap-4 text-sm">
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:00 PM (Match 11)</span>
-                                    <span class="text-white font-medium">Muhammad Saim <span class="text-yellow-400 px-1">vs</span> Sir Waqar Aziz</span>
-                                </div>
-                                <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:30 PM (Match 12)</span>
-                                    <span class="text-white font-medium">Muhammad Abdullah <span class="text-yellow-400 px-1">vs</span> Sir Faraz Anwer</span>
+                                    <span class="text-xs text-yellow-500 font-bold">12:00 - 12:30 PM (Semi 1)</span>
+                                    <span class="text-white font-medium">Semi-Final Match #1 (Rank #1 vs Rank #4)</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Knockouts & Finals -->
-                <div class="space-y-6">
-                    <h3 class="cinzel-font text-2xl font-bold text-yellow-400 border-b border-white/10 pb-3 flex items-center justify-between">
-                        <span>Knockouts & Finals</span>
-                        <span class="text-xs text-gray-400 font-sans font-normal">Final Stage</span>
-                    </h3>
-
-                    <div class="grid grid-cols-1 gap-4">
-                        <!-- Day 7 -->
-                        <div class="p-6 rounded-2xl bg-yellow-500/5 border border-yellow-500/30 transition-all space-y-3">
-                            <div class="flex items-center justify-between text-xs text-gray-400 border-b border-white/10 pb-2">
+                        <!-- Day 7 (Semi 2) -->
+                        <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-yellow-500/30 transition-all space-y-3">
+                            <div class="flex items-center justify-between text-xs text-gray-400 border-b border-white/5 pb-2">
                                 <span class="font-bold text-yellow-400 uppercase tracking-wider">Day 7 — 10 December 2026</span>
-                                <span class="text-yellow-400 font-semibold">Semifinals Stage</span>
+                                <span class="text-gray-400 font-medium">Semi 2</span>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                                <div class="flex justify-between items-center bg-black/40 p-3 rounded-xl border border-white/10">
-                                    <span class="text-xs text-yellow-400 font-bold">12:00 PM (Match 13)</span>
-                                    <span class="text-white font-medium">Rank 1 (Group A) <span class="text-yellow-400 px-1">vs</span> Rank 2 (Group B)</span>
-                                </div>
-                                <div class="flex justify-between items-center bg-black/40 p-3 rounded-xl border border-white/10">
-                                    <span class="text-xs text-yellow-400 font-bold">12:30 PM (Match 14)</span>
-                                    <span class="text-white font-medium">Rank 1 (Group B) <span class="text-yellow-400 px-1">vs</span> Rank 2 (Group A)</span>
+                            <div class="grid grid-cols-1 gap-4 text-sm">
+                                <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
+                                    <span class="text-xs text-yellow-500 font-bold">12:00 - 12:30 PM (Semi 2)</span>
+                                    <span class="text-white font-medium">Semi-Final Match #2 (Rank #2 vs Rank #3)</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Day 8 -->
-                        <div class="p-6 rounded-2xl bg-yellow-500/10 border border-yellow-500/50 transition-all space-y-3 shadow-lg shadow-yellow-500/5">
+                        <!-- Day 8 (Final) -->
+                        <div class="p-6 rounded-2xl bg-yellow-500/15 border border-yellow-500/60 transition-all space-y-3 shadow-lg shadow-yellow-500/10">
                             <div class="flex items-center justify-between text-xs text-gray-400 border-b border-white/10 pb-2">
                                 <span class="font-bold text-yellow-400 uppercase tracking-wider">Day 8 — 17 December 2026</span>
-                                <span class="text-yellow-400 font-bold">Finals Day 🏆</span>
+                                <span class="text-yellow-400 font-bold">Final Day 🏆</span>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                                <div class="flex justify-between items-center bg-black/50 p-3 rounded-xl border border-white/10">
-                                    <span class="text-xs text-yellow-400 font-bold">12:00 PM (Match 15)</span>
-                                    <span class="text-white font-medium">Loser SF1 <span class="text-yellow-400 px-1">vs</span> Loser SF2 <span class="text-xs text-gray-400 block sm:inline">(3rd Place)</span></span>
-                                </div>
-                                <div class="flex justify-between items-center bg-black/50 p-3 rounded-xl border border-yellow-500/40">
-                                    <span class="text-xs text-yellow-400 font-bold">12:30 PM (Match 16)</span>
-                                    <span class="text-white font-bold">Winner SF1 <span class="text-yellow-400 px-1">vs</span> Winner SF2 <span class="text-yellow-400 block sm:inline">🏆 Grand Final</span></span>
+                            <div class="grid grid-cols-1 gap-4 text-sm">
+                                <div class="flex justify-between items-center bg-black/50 p-4 rounded-xl border border-yellow-500/40">
+                                    <span class="text-xs text-yellow-400 font-bold">12:00 - 12:45 PM (Final)</span>
+                                    <span class="text-white font-bold text-base">Winner Semi 1 <span class="text-yellow-400 px-2">vs</span> Winner Semi 2 🏆</span>
                                 </div>
                             </div>
                         </div>
@@ -380,67 +355,16 @@
                 <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-400 to-yellow-700 flex items-center justify-center text-black font-black">
                     <i data-lucide="crown" class="w-5 h-5"></i>
                 </div>
-                <span class="cinzel-font text-lg font-bold text-white">EET CHAMPIONSHIP 2026</span>
+                <span class="cinzel-font text-lg font-bold text-white">EET CHESS CHAMPIONSHIP 2026</span>
             </div>
             <p class="text-xs text-gray-500">
                 &copy; 2026 EET Department. All rights reserved.
             </p>
-            <div class="flex space-x-4 text-gray-400">
-                <a href="#" class="hover:text-yellow-400 transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-                <a href="#" class="hover:text-yellow-400 transition-colors"><i data-lucide="twitch" class="w-5 h-5"></i></a>
-                <a href="#" class="hover:text-yellow-400 transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
-            </div>
         </div>
     </footer>
 
-    <!-- Registration Modal -->
-    <div id="registrationModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden">
-        <div class="bg-[#12141c] border border-white/10 rounded-3xl max-w-md w-full p-6 sm:p-8 relative space-y-6 shadow-2xl">
-            <button onclick="closeRegistrationModal()" class="absolute top-6 right-6 text-gray-400 hover:text-white">
-                <i data-lucide="x" class="w-6 h-6"></i>
-            </button>
-
-            <div class="space-y-2">
-                <div class="cinzel-font text-2xl font-bold text-white">Tournament Registration</div>
-                <p class="text-xs text-gray-400">Fill in your details to secure your slot in EET Championship 2026.</p>
-            </div>
-
-            <form onsubmit="handleRegistration(event)" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Full Name</label>
-                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white text-sm focus:outline-none focus:border-yellow-500">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Email Address</label>
-                    <input type="email" required placeholder="student@eet.edu" class="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white text-sm focus:outline-none focus:border-yellow-500">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold uppercase text-gray-400 mb-1">Department / ID</label>
-                    <input type="text" placeholder="EET-2026-001" class="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white text-sm focus:outline-none focus:border-yellow-500">
-                </div>
-                <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-black font-bold text-sm shadow-lg shadow-yellow-500/20 transition-all">
-                    Complete Registration
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Success Toast Notification -->
-    <div id="toast" class="fixed bottom-6 right-6 z-50 bg-[#12141c] border border-yellow-500/30 text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center space-x-3 transform translate-y-32 transition-transform duration-300">
-        <div class="w-8 h-8 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-400">
-            <i data-lucide="check" class="w-5 h-5"></i>
-        </div>
-        <div>
-            <div id="toast-title" class="cinzel-font font-bold text-sm">Success!</div>
-            <div id="toast-msg" class="text-xs text-gray-400">Action completed successfully.</div>
-        </div>
-    </div>
-
     <script>
-        // Initialize Lucide icons
         lucide.createIcons();
-
-        // Exact Target Date: 15 October 2026 at 12:00:00 PM
         const targetDate = new Date('2026-10-15T12:00:00').getTime();
 
         function updateCountdown() {
@@ -457,46 +381,10 @@
                 document.getElementById('hours').innerText = String(hours).padStart(2, '0');
                 document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
                 document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
-            } else {
-                document.getElementById('days').innerText = '00';
-                document.getElementById('hours').innerText = '00';
-                document.getElementById('minutes').innerText = '00';
-                document.getElementById('seconds').innerText = '00';
             }
         }
         setInterval(updateCountdown, 1000);
         updateCountdown();
-
-        // Modal Controls
-        function openRegistrationModal() {
-            document.getElementById('registrationModal').classList.remove('hidden');
-        }
-        function closeRegistrationModal() {
-            document.getElementById('registrationModal').classList.add('hidden');
-        }
-
-        // Handle Form Submission
-        function handleRegistration(e) {
-            e.preventDefault();
-            closeRegistrationModal();
-            showToast('Registration Confirmed!', 'Welcome aboard! Check your email for tournament passes.');
-            confetti({
-                particleCount: 100,
-                spread: 70,
-                origin: { y: 0.6 }
-            });
-        }
-
-        // Toast Notification System
-        function showToast(title, message) {
-            const toast = document.getElementById('toast');
-            document.getElementById('toast-title').innerText = title;
-            document.getElementById('toast-msg').innerText = message;
-            toast.classList.remove('translate-y-32');
-            setTimeout(() => {
-                toast.classList.add('translate-y-32');
-            }, 4000);
-        }
     </script>
 </body>
 </html>
