@@ -222,6 +222,10 @@
                                     <span class="text-xs text-yellow-500 font-bold">12:30-1:00 (M5)</span>
                                     <span class="text-white font-medium">Sir Arslan Dawood <span class="text-yellow-400 px-1">vs</span> Muhammad Abdullah</span>
                                 </div>
+                                <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
+                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M10)</span>
+                                    <span class="text-white font-medium">Sir Waqar Aziz <span class="text-yellow-400 px-1">vs</span> Sir Arslan Dawood</span>
+                                </div>
                             </div>
                         </div>
 
@@ -232,10 +236,6 @@
                                 <span class="text-gray-400 font-medium">3 Group Matches (All Players Available)</span>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                                <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
-                                    <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M10)</span>
-                                    <span class="text-white font-medium">Sir Waqar Aziz <span class="text-yellow-400 px-1">vs</span> Sir Arslan Dawood</span>
-                                </div>
                                 <div class="flex justify-between items-center bg-black/30 p-3 rounded-xl border border-white/5">
                                     <span class="text-xs text-yellow-500 font-bold">12:00-12:30 (M11)</span>
                                     <span class="text-white font-medium">Sir Waqar Aziz <span class="text-yellow-400 px-1">vs</span> Muhammad Hanzala</span>
@@ -397,16 +397,16 @@
 
         // Points Table Data & Generation Logic
         const playersData = [
-            { name: "Sir Arslan Dawood", played: 0, won: 0, drawn: 0, lost: 0, points: 0 },
-            { name: "Sir Faraz Anwer", played: 1, won: 1, drawn: 0, lost: 0, points: 0 },
-            { name: "Numan Jawed", played: 1, won: 1, drawn: 0, lost: 0, points: 3 },
+            { name: "Sir Arslan Dawood", played: 2, won: 2, drawn: 0, lost: 0, points: 6 },
+            { name: "Sir Faraz Anwer", played: 1, won: 1, drawn: 0, lost: 0, points: 3 },
+            { name: "Numan Jawed", played: 2, won: 2, drawn: 0, lost: 0, points: 6 },
             { name: "Muhammad Saim", played: 2, won: 0, drawn: 0, lost: 2, points: 0 },
-            { name: "Muhammad Abdullah", played: 1, won: 0, drawn: 0, lost: 1, points: 0 },
-            { name: "Muhammad Rehan", played: 1, won: 1, drawn: 0, lost: 0, points: 3 },
+            { name: "Muhammad Abdullah", played: 2, won: 0, drawn: 0, lost: 2, points: 0 },
+            { name: "Muhammad Rehan", played: 2, won: 1, drawn: 0, lost: 1, points: 3 },
             { name: "Muhammad Hanzala", played: 1, won: 0, drawn: 0, lost: 1, points: 0 },
-            { name: "Ghulam Mohiuddin", played: 1, won: 1, drawn: 0, lost: 0, points: 0 },
-            { name: "Sir Waqar Aziz", played: 0, won: 0, drawn: 0, lost: 0, points: 0 },
-            { name: "Sir Umer Ijaz", played: 0, won: 0, drawn: 0, lost: 0, points: 0 }
+            { name: "Ghulam Mohiuddin", played: 2, won: 1, drawn: 0, lost: 1, points: 3 },
+            { name: "Sir Waqar Aziz", played: 2, won: 1, drawn: 0, lost: 1, points: 3 },
+            { name: "Sir Umer Ijaz", played: 2, won: 1, drawn: 0, lost: 1, points: 3 }
         ];
 
         function renderPointsTable() {
